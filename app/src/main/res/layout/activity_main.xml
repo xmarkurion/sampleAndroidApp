@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_img_logo"
+        android:layout_width="294dp"
+        android:layout_height="431dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transparent_hand" />
+
+    <ProgressBar
+        android:id="@+id/main_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="268dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="@+id/main_img_logo"
+        app:layout_constraintStart_toStartOf="@+id/main_img_logo"
+        app:layout_constraintTop_toBottomOf="@+id/main_textView" />
+
+    <TextView
+        android:id="@+id/main_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/main_img_logo"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/main_img_logo"
+        app:layout_constraintTop_toBottomOf="@+id/main_img_logo" />
+
+    <TextView
+        android:id="@+id/main_textView_precent"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/main_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/main_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/main_progressBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

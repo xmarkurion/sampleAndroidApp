@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_constrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--  MEMBERSHIP MENU SECTION -->
+            <LinearLayout
+                android:id="@+id/main_layout_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_shape_circle"
+                    android:padding="1dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp">
+
+                    <ImageView
+                        android:id="@+id/menu_img_card"
+                        android:layout_width="106dp"
+                        android:layout_height="106dp"
+                        android:layout_marginStart="24dp"
+                        android:contentDescription="@string/main_membership_card_desc"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/vector_card_membership"
+                        />
+
+                    <TextView
+                        android:id="@+id/menu_textView_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/membership_card"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/menu_img_card"
+                        app:layout_constraintTop_toTopOf="@+id/menu_img_card"
+                        android:background="@drawable/btn_shape_round"
+                        android:padding="15dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <!--  SESSION MENU SECTION    -->
+            <LinearLayout
+                android:id="@+id/main_layout_sessions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:background="@drawable/btn_shape_circle"
+                android:padding="1dp"
+                android:layout_margin="5dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/menu_img_session"
+                        android:layout_width="106dp"
+                        android:layout_height="106dp"
+                        android:layout_marginStart="24dp"
+                        android:contentDescription="@string/main_membership_card_desc"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/gymnastic_icon"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/menu_textView_session"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/workout_session_s"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/menu_img_session"
+                        app:layout_constraintTop_toTopOf="@+id/menu_img_session"
+                        android:background="@drawable/btn_shape_round"
+                        android:padding="15dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <!--  YOUTUBE MENU SECTION    -->
+            <LinearLayout
+                android:id="@+id/main_layout_play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:background="@drawable/btn_shape_circle"
+                android:padding="1dp"
+                android:layout_margin="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/menu_img_youtube"
+                        android:layout_width="106dp"
+                        android:layout_height="106dp"
+                        android:layout_marginStart="24dp"
+                        android:contentDescription="@string/main_youtube_video_tex_desc"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/screen_play"
+                        />
+
+                    <TextView
+                        android:id="@+id/menu_textView_youtube"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/main_youtube_video_text"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/menu_img_youtube"
+                        app:layout_constraintTop_toTopOf="@+id/menu_img_youtube"
+                        android:background="@drawable/btn_shape_round"
+                        android:padding="15dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <!--  MAP MENU SECTION    -->
+            <LinearLayout
+                android:id="@+id/main_layout_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:background="@drawable/btn_shape_circle"
+                android:padding="1dp"
+                android:layout_margin="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:id="@+id/menu_img_map"
+                        android:layout_width="106dp"
+                        android:layout_height="106dp"
+                        android:layout_marginStart="24dp"
+                        android:contentDescription="@string/main_map_text_desc"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/baseline_map_24"
+                        />
+
+                    <TextView
+                        android:id="@+id/menu_textView_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/main_map_text"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/menu_img_map"
+                        app:layout_constraintTop_toTopOf="@+id/menu_img_map"
+                        android:background="@drawable/btn_shape_round"
+                        android:padding="15dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <!--  WEB MENU SECTION    -->
+            <LinearLayout
+                android:id="@+id/main_layout_web"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:background="@drawable/btn_shape_circle"
+                android:padding="1dp"
+                android:layout_margin="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/menu_img_web"
+                        android:layout_width="106dp"
+                        android:layout_height="106dp"
+                        android:layout_marginStart="24dp"
+                        android:contentDescription="@string/main_web_text_desc"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/web"
+                        />
+
+                    <TextView
+                        android:id="@+id/menu_textView_web"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/main_web_text"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/menu_img_web"
+                        app:layout_constraintTop_toTopOf="@+id/menu_img_web"
+                        android:background="@drawable/btn_shape_round"
+                        android:padding="15dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <!--  SETTINGS MENU SECTION    -->
+            <LinearLayout
+                android:id="@+id/main_layout_setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:background="@drawable/btn_shape_circle"
+                android:padding="1dp"
+                android:layout_margin="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/menu_img_setting"
+                        android:layout_width="106dp"
+                        android:layout_height="106dp"
+                        android:layout_marginStart="24dp"
+                        android:contentDescription="@string/main_settings_text_desc"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/settings_vect"
+                        />
+
+                    <TextView
+                        android:id="@+id/menu_textView_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/main_settings_text"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/menu_img_setting"
+                        app:layout_constraintTop_toTopOf="@+id/menu_img_setting"
+                        android:background="@drawable/btn_shape_round"
+                        android:padding="10dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+            <!--  END MENU SECTION    -->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
